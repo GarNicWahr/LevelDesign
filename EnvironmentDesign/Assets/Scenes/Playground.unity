@@ -623,6 +623,8 @@ GameObject:
   - component: {fileID: 1272310643}
   - component: {fileID: 1272310642}
   - component: {fileID: 1272310641}
+  - component: {fileID: 1272310646}
+  - component: {fileID: 1272310645}
   m_Layer: 0
   m_Name: CloudSphere
   m_TagString: Untagged
@@ -716,6 +718,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1272310645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272310640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":51.99994,"y":130.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"04ddd78c-b3f4-40f2-9017-a999c244361d","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-238.0,"y":-14.0},"guid":"660c86b1-cd8f-429b-829a-9bc774551e98","$version":"A","$type":"Unity.VisualScripting.Update","$id":"12"},{"chainable":false,"parameterNames":["xAngle","yAngle","zAngle"],"member":{"name":"Rotate","parameterTypes":["System.Single","System.Single","System.Single"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%xAngle":{"$content":0.0,"$type":"System.Single"},"%yAngle":{"$content":0.0,"$type":"System.Single"},"%zAngle":{"$content":0.0,"$type":"System.Single"}},"position":{"x":306.0,"y":-11.0},"guid":"358cc9ed-009e-44a4-a456-9f6a2a90b04a","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"14"},{"defaultValues":{"b":{"$content":1.0,"$type":"System.Single"}},"position":{"x":39.0,"y":173.0},"guid":"ef363ed0-77ba-4531-aae2-6e085c5eed33","$version":"A","$type":"Unity.VisualScripting.ScalarMultiply","$id":"18"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"rotationSpeed","$type":"System.String"},"object":null},"position":{"x":-219.0,"y":131.0},"guid":"b268fceb-6319-4678-a389-5496c8d3bcef","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"20"},{"member":{"name":"deltaTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-213.0,"y":262.0},"guid":"7a008849-35ca-4153-a8a5-9a0efe4b69da","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"22"},{"sourceUnit":{"$ref":"12"},"sourceKey":"trigger","destinationUnit":{"$ref":"14"},"destinationKey":"enter","guid":"5e75ac7f-2c60-4c15-81c6-6326cf73221c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"product","destinationUnit":{"$ref":"14"},"destinationKey":"%yAngle","guid":"3bac9cdf-0aa2-4276-b790-54bb59ed6eb3","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"a","guid":"be5e8331-9b11-4e71-bbe1-294dfaea450d","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"b","guid":"5cf3c7e0-bef0-4eda-9db9-56dd703243de","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!114 &1272310646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272310640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"rotationSpeed","value":{"$content":10.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &1764214107
 GameObject:
   m_ObjectHideFlags: 0
